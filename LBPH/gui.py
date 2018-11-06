@@ -1,5 +1,8 @@
 from tkinter import *
+<<<<<<< HEAD
 from PIL import Image, ImageTk
+=======
+>>>>>>> 2f51db402aae56e6c171d4fb38ac01ed0802810d
 
 f_name=[]
 l_name=[]
