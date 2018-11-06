@@ -21,7 +21,7 @@ labels.append(2)
 
 
 draw_rectangle(image_test, rect)
-image_train_1=cv2.imread("croped1.jpg")
+image_train_1=cv2.imread("croped1.png")
 image_train_1=cv2.resize(image_train_1,(100,100))
 image_train_gray_1=cv2.cvtColor(image_train_1,cv2.COLOR_BGR2GRAY)
 
