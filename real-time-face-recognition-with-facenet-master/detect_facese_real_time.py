@@ -41,14 +41,14 @@ with tf.Graph().as_default():
 
         print('Loading feature extraction model')
         modeldir = '20170511-185253/20170511-185253.pb'
-        facenet.load_model(modeldir)
+        facenet.load_model(modeldir)    #loading our model
 
         images_placeholder = tf.get_default_graph().get_tensor_by_name("input:0")
         embeddings = tf.get_default_graph().get_tensor_by_name("embeddings:0")
         phase_train_placeholder = tf.get_default_graph().get_tensor_by_name("phase_train:0")
         embedding_size = embeddings.get_shape()[1]
 
-        classifier_filename = 'classifier'
+        classifier_filename = 'classifier'  #Saving our classifier by this name
         classifier_filename_exp = os.path.expanduser(classifier_filename)
         with open(classifier_filename_exp, 'rb') as infile:
             (model, class_names) = pickle.load(infile)
@@ -57,9 +57,15 @@ with tf.Graph().as_default():
         video_capture = cv2.VideoCapture(0)
         c = 0
 
+<<<<<<< HEAD:real-time-face-recognition-with-facenet-master/detect_facese_real_time.py
         # #video writer
         fourcc = cv2.VideoWriter_fourcc(*'DIVX')
         out = cv2.VideoWriter('3F_0726.avi', fourcc, fps=30, frameSize=(640,480))
+=======
+        # video writer
+        # fourcc = cv2.VideoWriter_fourcc(*'DIVX')
+        # out = cv2.VideoWriter('3F_0726.avi', fourcc, fps=30, frameSize=(640,480))
+>>>>>>> dlab/master:real-time-deep-face-recognition-master/realtime_facenet_git.py
 
         print('Start Recognition!')
         prevTime = 0
