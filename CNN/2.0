@@ -1,0 +1,4 @@
+Contains implementation on a larger dataset of celebrities.
+Using CNN.
+Accuracy and Loss curves show less overfitting as compared to the last case but spikes in the graph.
+Model to be optimized to obtain smoother curves.
