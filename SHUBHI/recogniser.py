@@ -34,13 +34,13 @@ for (x, y, w, h) in faces:  # Frames  LOCATION X, Y  WIDTH, HEIGHT
     NAME = NameFind.ID2Name(ID, conf)
     NameFind.DispID(x, y, w, h, NAME, gray)
 
-    ID, conf = EIGEN.predict(Face)  # EIGEN FACE RECOGNITION
-    NAME = NameFind.ID2Name(ID, conf)
-    NameFind.DispID3(x, y, w, h, NAME, gray)
+  #  ID, conf = EIGEN.predict(Face)  # EIGEN FACE RECOGNITION
+    #NAME = NameFind.ID2Name(ID, conf)
+    #NameFind.DispID3(x, y, w, h, NAME, gray)
 
-    ID, conf = FISHER.predict(Face)  # FISHER FACE RECOGNITION
-    NAME = NameFind.ID2Name(ID, conf)
-    NameFind.DispID2(x, y, w, h, NAME, gray)
+   # ID, conf = FISHER.predict(Face)  # FISHER FACE RECOGNITION
+    #NAME = NameFind.ID2Name(ID, conf)
+    #NameFind.DispID2(x, y, w, h, NAME, gray)
 
 cv2.imshow('LBPH Face Recognition System', gray)  # IMAGE DISPLAY
 cv2.waitKey(0)
