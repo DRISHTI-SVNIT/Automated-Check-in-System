@@ -18,7 +18,7 @@ LBPH.read("C:/Users/Shubhi/Desktop/LBPH/recogniser/trainingDataLBPH.xml")
 
 # ------------------------------------  PHOTO INPUT  -----------------------------------------------------
 
-img = cv2.imread('C:/Users/Shubhi/Desktop/LBPH/dataset/id.1.5.jpg')  # ------->>> THE ADDRESS TO THE PHOTO
+img = cv2.imread('C:/Users/Shubhi/Desktop/id.6.5.jpg')  # ------->>> THE ADDRESS TO THE PHOTO
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)  # Convert the Camera to gray
 faces = face_cascade.detectMultiScale(gray, 1.3, 4)  # Detect the faces and store the positions
@@ -31,6 +31,7 @@ for (x, y, w, h) in faces:  # Frames  LOCATION X, Y  WIDTH, HEIGHT
     ID, conf = LBPH.predict(Face)  # LBPH RECOGNITION
     print
     ID
+    print ID
     NAME = NameFind.ID2Name(ID, conf)
     NameFind.DispID(x, y, w, h, NAME, gray)
 
