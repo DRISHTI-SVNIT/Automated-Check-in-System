@@ -57,15 +57,9 @@ with tf.Graph().as_default():
         video_capture = cv2.VideoCapture(0)
         c = 0
 
-<<<<<<< HEAD:real-time-face-recognition-with-facenet-master/detect_facese_real_time.py
         # #video writer
         fourcc = cv2.VideoWriter_fourcc(*'DIVX')
         out = cv2.VideoWriter('3F_0726.avi', fourcc, fps=30, frameSize=(640,480))
-=======
-        # video writer
-        # fourcc = cv2.VideoWriter_fourcc(*'DIVX')
-        # out = cv2.VideoWriter('3F_0726.avi', fourcc, fps=30, frameSize=(640,480))
->>>>>>> dlab/master:real-time-deep-face-recognition-master/realtime_facenet_git.py
 
         print('Start Recognition!')
         prevTime = 0
