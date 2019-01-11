@@ -15,10 +15,11 @@ def getImageWithID (path):
         faceImage = faceImage.resize((110,110))         # resize the image so the EIGEN recogniser can be trained
         faceNP = np.array(faceImage, 'uint8')           # convert the image to Numpy array
         ID = int(os.path.split(imagePath)[-1].split('.')[1])    # Retreave the ID of the array
+        print ID
         FaceList.append(faceNP)                         # Append the Numpy Array to the list
         IDs.append(ID)                                  # Append the ID to the IDs list
         cv2.imshow('Training Set', faceNP)              # Show the images in the list
-        cv2.waitKey(0)
+        #cv2.waitKey()
     return np.array(IDs), FaceList                      # The IDs are converted in to a Numpy array
 IDs, FaceList = getImageWithID(path)
 
