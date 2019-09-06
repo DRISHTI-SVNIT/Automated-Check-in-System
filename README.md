@@ -4,4 +4,5 @@ This project aims at implementing a Automated-Check-in-System for our college (S
 
 Involved technologies are Computer Vision and Machine learning. 
 
-Currently it is under development, first version will soon be out!
+The working video of our model from facenet is 
+[CLICK HERE](https://www.youtube.com/watch?v=6Pm2-S2MhMs "Click to Watch!")
