@@ -1,4 +1,4 @@
-# Face Recogntion with Facenet
+# Automated Check-In System (Facenet)
 * This project aims to detect the face of the persons using facenet with tensorflow library.<br>
 * The project includes improved image cropping and alignment using Multi-Task Cascaded Convolution Neural Network. In this project a 128-dimensional embedding based on triplet loss and deep CNN is used for classification. We have achieved an accuracy of 89%.<br>
 * The project is implemented in Python.<br>
